@@ -2,8 +2,8 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-app.get('/', (req, res) => {
-    res.send('hello mattia')
+app.get('/', (req, res) => { //prima rotta preincipale
+    res.send('<h1>Server del mio blog</h1>') //il type di default é 'html'
 })
 
 app.listen(port, () =>{
