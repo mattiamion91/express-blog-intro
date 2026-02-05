@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+app.use(express.static('public')) //asset statici di expressjs (middleware)
+
 app.get('/', (req, res) => { //prima rotta preincipale
 
     console.log(res);
